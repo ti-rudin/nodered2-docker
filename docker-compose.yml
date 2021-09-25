@@ -8,12 +8,10 @@ services:
       dockerfile: ./nodered2.Dockerfile
     environment:
       - TZ=Europe/Moscow
-      - GOOGUID=aaaad3fmoh2rVoVNgIcpLTFZBE0jHnI2
     ports:
       - "1880:1880"
     volumes:
       - ./node-red-data2:/data 
-
 
 volumes:
   node-red-data2:
